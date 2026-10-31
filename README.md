@@ -1,10 +1,6 @@
-<p data-importer="text" align="left">Hello World!!</p>
+<p data-importer="text" align="left">Hello, my research interests include automatic speech recognition and natural language processing.</p>
 
 ###
-
-<div data-importer="image" align="center">
-  <img data-importer="image" height="200" src="https://i.imgur.com/nBuWVQ7.png"  />
-</div>
 
 <div align="center">
   <img src="https://i.imgur.com/nBuWVQ7.png" width="100%" />
