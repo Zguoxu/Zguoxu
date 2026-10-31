@@ -3,7 +3,7 @@
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/你的用户名/你的用户名/main/assets/claude-intro.svg"
+    src="https://raw.githubusercontent.com/Zguoxu/Zguoxu/main/assets/claude-intro.svg"
     alt="guoxu introduction"
     width="100%"
   />
