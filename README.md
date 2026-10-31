@@ -6,6 +6,10 @@
   <img data-importer="image" height="200" src="https://i.imgur.com/nBuWVQ7.png"  />
 </div>
 
+<div align="center">
+  <img src="https://i.imgur.com/nBuWVQ7.png" width="100%" />
+</div>
+
 ###
 
 <img data-importer="snake" src="https://raw.githubusercontent.com/Zguoxu/Zguoxu/snake-output/snake.svg" alt="Snake animation" />
