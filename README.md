@@ -3,7 +3,7 @@
 ###
 
 <div data-importer="image" align="center">
-  <img data-importer="image" height="200" src="https://imgur.com/a/hxwYMTD"  />
+  <img data-importer="image" height="200" src="https://i.imgur.com/nBuWVQ7.png"  />
 </div>
 
 ###
