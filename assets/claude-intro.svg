@@ -64,12 +64,6 @@
         font-weight="bold"
         fill="#302D2B">guoxu</text>
 
-  <text x="1120" y="60"
-        text-anchor="end"
-        font-family="monospace"
-        font-size="18"
-        fill="#968A80">AI / Research</text>
-
   <!-- 顶部分隔线 -->
   <line x1="1" y1="98"
         x2="1179" y2="98"
@@ -213,12 +207,5 @@
          begin="5.65s"
          fill="freeze"/>
   </text>
-
-  <!-- 右下角标识 -->
-  <text x="1125" y="432"
-        text-anchor="end"
-        font-family="monospace"
-        font-size="17"
-        fill="#968A80">✳ Claude-inspired</text>
 
 </svg>
