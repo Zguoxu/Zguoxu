@@ -8,6 +8,18 @@
 
   <title>guoxu - Claude inspired introduction</title>
 
+     
+<style>
+  text {
+    font-family:
+      "Anthropic Mono",
+      "SF Mono",
+      "Menlo",
+      "Consolas",
+      monospace;
+  }
+</style>
+
   <defs>
     <!-- 第一行：分段流式显示 -->
     <clipPath id="reveal1">
