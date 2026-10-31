@@ -1,6 +1,3 @@
-<p data-importer="text" align="left">Hello, my research interests include automatic speech recognition and natural language processing.</p>
-
-
 <div align="center">
   <img
     src="https://raw.githubusercontent.com/Zguoxu/Zguoxu/main/assets/claude-intro.svg"
