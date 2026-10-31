@@ -1,29 +1,29 @@
 
 <svg xmlns="http://www.w3.org/2000/svg"
      width="1180"
-     height="455"
-     viewBox="0 0 1180 455"
+     height="320"
+     viewBox="0 0 1180 320"
      role="img"
      aria-label="guoxu AI research introduction">
 
   <title>guoxu - Claude inspired introduction</title>
 
-     
-<style>
-  text {
-    font-family:
-      "Anthropic Mono",
-      "SF Mono",
-      "Menlo",
-      "Consolas",
-      monospace;
-  }
-</style>
+  <style>
+    text {
+      font-family:
+        "Anthropic Mono",
+        "SF Mono",
+        "Menlo",
+        "Consolas",
+        monospace;
+    }
+  </style>
 
   <defs>
-    <!-- 第一行：分段流式显示 -->
+
+    <!-- 第一行流式生成 -->
     <clipPath id="reveal1">
-      <rect x="72" y="222" width="0" height="65">
+      <rect x="72" y="139" width="0" height="48">
         <animate
           attributeName="width"
           values="0;45;91;136;182;227;272;318;341;363;386"
@@ -35,9 +35,9 @@
       </rect>
     </clipPath>
 
-    <!-- 第二行：模拟不均匀的 Token 输出 -->
+    <!-- 第二行流式生成 -->
     <clipPath id="reveal2">
-      <rect x="72" y="286" width="0" height="65">
+      <rect x="72" y="190" width="0" height="48">
         <animate
           attributeName="width"
           values="0;42;84;126;168;210;252;294;336;378;420;462;504;546;588;630;672;714;756;798;840;882;924;966;987"
@@ -48,42 +48,71 @@
           fill="freeze"/>
       </rect>
     </clipPath>
+
   </defs>
 
-  <!-- 米白色终端卡片 -->
+  <!-- 背景 -->
   <rect x="1" y="1"
-        width="1178" height="453"
-        rx="22"
+        width="1178" height="318"
+        rx="20"
         fill="#FAF8F5"
         stroke="#E8DED3"
         stroke-width="2"/>
 
-  <!-- Claude 风格的星形标记 -->
-  <g transform="translate(55 52)"
-     stroke="#D97757"
-     stroke-width="2.7"
-     stroke-linecap="round">
-    <path d="M0 -15 V15
-             M-15 0 H15
-             M-11 -11 L11 11
-             M11 -11 L-11 11"/>
+  <!-- Claude 风格动态星芒 -->
+  <g transform="translate(55 39)">
+
+    <g stroke="#D97757"
+       stroke-width="2.7"
+       stroke-linecap="round"
+       fill="none">
+
+      <path d="
+        M0 -15 V15
+        M-15 0 H15
+        M-11 -11 L11 11
+        M11 -11 L-11 11
+      "/>
+
+      <animate
+        attributeName="opacity"
+        values="1;0.55;1;0.82;1"
+        keyTimes="0;0.4;0.53;0.77;1"
+        dur="2.4s"
+        repeatCount="indefinite"/>
+
+      <animate
+        attributeName="stroke"
+        values="#D97757;#D97757;#F0A080;#D97757;#D97757"
+        keyTimes="0;0.4;0.53;0.77;1"
+        dur="2.4s"
+        repeatCount="indefinite"/>
+
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="1;0.96;1.10;1.02;1"
+        keyTimes="0;0.4;0.53;0.77;1"
+        dur="2.4s"
+        repeatCount="indefinite"/>
+
+    </g>
   </g>
 
-  <!-- 顶部标题 -->
-  <text x="88" y="61"
-        font-family="monospace"
+  <!-- 顶部用户名 -->
+  <text x="88" y="49"
         font-size="23"
         font-weight="bold"
         fill="#302D2B">guoxu</text>
 
   <!-- 顶部分隔线 -->
-  <line x1="1" y1="98"
-        x2="1179" y2="98"
+  <line x1="1" y1="72"
+        x2="1179" y2="72"
         stroke="#E8DED3"
         stroke-width="1.5"/>
 
   <!-- 提示词箭头 -->
-  <path d="M65 160 L77 174 L65 188"
+  <path d="M65 100 L77 113 L65 126"
         fill="none"
         stroke="#D97757"
         stroke-width="5"
@@ -91,14 +120,12 @@
         stroke-linejoin="miter"/>
 
   <!-- 用户提示 -->
-  <text x="101" y="181"
-        font-family="monospace"
+  <text x="101" y="121"
         font-size="20"
         fill="#968A80">Introduce yourself</text>
 
-  <!-- 第一行生成文本 -->
-  <text x="72" y="272"
-        font-family="monospace"
+  <!-- 第一行文字 -->
+  <text x="72" y="177"
         font-size="37"
         font-weight="500"
         textLength="386"
@@ -106,25 +133,24 @@
         fill="#4D463F"
         clip-path="url(#reveal1)">Hello! I'm guoxu.</text>
 
-  <!-- 第二行生成文本 -->
-  <text x="72" y="335"
-        font-family="monospace"
+  <!-- 第二行文字 -->
+  <text x="72" y="229"
         font-size="35"
         textLength="987"
         lengthAdjust="spacingAndGlyphs"
         fill="#4D463F"
         clip-path="url(#reveal2)">Exploring Speech Recognition, LLMs, and beyond.</text>
 
-  <!-- 第一行移动光标 -->
-  <rect x="72" y="237"
-        width="3" height="43"
+  <!-- 第一行光标 -->
+  <rect x="72" y="143"
+        width="3" height="39"
         fill="#D97757"
         visibility="hidden">
 
     <set attributeName="visibility"
          to="visible"
          begin="0.65s"
-         dur="1.95s"/>
+         dur="1.65s"/>
 
     <animate
       attributeName="x"
@@ -141,18 +167,19 @@
       dur="0.8s"
       begin="0.65s"
       repeatCount="indefinite"/>
+
   </rect>
 
-  <!-- 第二行移动光标 -->
-  <rect x="72" y="299"
-        width="3" height="43"
+  <!-- 第二行光标 -->
+  <rect x="72" y="195"
+        width="3" height="39"
         fill="#D97757"
         visibility="hidden">
 
     <set attributeName="visibility"
          to="visible"
          begin="2.6s"
-         dur="3.05s"/>
+         dur="2.9s"/>
 
     <animate
       attributeName="x"
@@ -169,16 +196,17 @@
       dur="0.8s"
       begin="2.6s"
       repeatCount="indefinite"/>
+
   </rect>
 
   <!-- 底部分隔线 -->
-  <line x1="45" y1="389"
-        x2="1135" y2="389"
+  <line x1="45" y1="273"
+        x2="1135" y2="273"
         stroke="#E8DED3"
         stroke-width="1.5"/>
 
-  <!-- 状态指示点 -->
-  <circle cx="55" cy="425" r="5"
+  <!-- 状态指示灯 -->
+  <circle cx="55" cy="296" r="5"
           fill="#D97757">
 
     <animate
@@ -186,8 +214,7 @@
       values="1;0.4;1"
       dur="1.2s"
       begin="0s"
-      repeatCount="4"
-      fill="freeze"/>
+      repeatCount="4"/>
 
     <set attributeName="fill"
          to="#96B69C"
@@ -196,8 +223,7 @@
   </circle>
 
   <!-- 生成中状态 -->
-  <text x="78" y="432"
-        font-family="monospace"
+  <text x="78" y="302"
         font-size="18"
         fill="#968A80">Generating...
 
@@ -208,8 +234,7 @@
   </text>
 
   <!-- 完成状态 -->
-  <text x="78" y="432"
-        font-family="monospace"
+  <text x="78" y="302"
         font-size="18"
         fill="#968A80"
         visibility="hidden">Complete
