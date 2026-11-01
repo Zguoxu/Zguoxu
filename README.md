@@ -15,10 +15,6 @@
 
 ###
 
-[![@zguoxu on Byteland](https://byteland.dev/card/zguoxu.svg)](https://byteland.dev/@zguoxu?ref=readme)
-
-###
-
 <img data-importer="snake" src="https://raw.githubusercontent.com/Zguoxu/Zguoxu/snake-output/snake.svg" alt="Snake animation" />
 
 ###
