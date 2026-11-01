@@ -62,3 +62,7 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gcc/gcc-original.svg" height="40" alt="gcc logo"  />
 </div>
+
+###
+
+[Want to know more about me? Click to visit my personal blog. →](https://zguoxu.github.io/)
